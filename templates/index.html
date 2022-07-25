@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>API Documentation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<style>
+    body {
+        font-family: 'Roboto Slab', serif;
+        background-color: #001219;
+        margin-left: auto;
+        margin-right: auto;
+        color: #e1eef8;
+    }
+
+    a {
+        color: #B55AFC;
+        
+    }
+
+    a:hover {
+        color: #5AB1BB;
+    }
+
+    .main {
+        text-align: left;
+        margin-top: 4%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-bottom: 10%;
+    }
+
+    .bingo {
+        border-bottom: 2px solid #333333;
+        margin-bottom: 2%;
+        margin-right: 10%;
+    }
+
+    .example {
+        font-family: Courier New;
+        background-color: #333333;
+        border-radius: 4px;
+        margin-right: 10%;
+        margin-top: 1%;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+
+    .example-title {
+        padding-left: 4%;
+    }
+
+    .highlight {
+        color: #FF63BE;
+        font-family: Courier New;
+        
+    }
+
+    .link {
+        color: #f7d75c;
+        font-family: Courier New;
+    }
+
+    .underline {
+        text-align: left;
+        border-bottom: 2px solid black;
+    }
+
+    .code {
+        padding-left: 4%;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify">
+        <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html""> Documentation </a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> API Endpoints</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://api.morecis.co/v1/bingo/ "> Bingo v1 </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1> API Documentation </h1>
+        <br>
+        <div class="bingo"> 
+            <h2> Bingo </h2>
+            <i> v 1.0 </i>
+            <p> The API for our <a href="https://bingo.morecis.co/" target="_blank"> bingo </a> game. 
+            The API is set up so, that the CORS allows for the use of it outside of our local network.
+            <br>
+            <strong> Root: </strong> 
+            <a href="https://api.morecis.co/v1/bingo/" target="_blank" class="link"> api.morecis.co/v1/bingo/ </a> 
+            </p>
+        </div>
+        <div> <strong>
+                Bingo card items <br>
+                <quote class="highlight">[GET]</quote> </strong>
+                <quote class="link"> /items</quote><br>
+                Get the items for the bingo card in .json form. 
+                <div class="example"> 
+                    <quote class="example-title">JavaScript example </quote><br>
+                    <div class="underline"> </div>
+                    <div class="code"> <strong>
+                    <br>
+                    <span style="color: cyan;">$<span style="color: yellow;">.getJSON(<span style="color: orange;">"https://api.morecis.co/v1/bingo/items"</span>)</span> </span><br>
+                    
+                    </div>
+                </strong> 
+            </div>
+        </div>
+    </div>
+
+</body>
